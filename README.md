@@ -68,5 +68,5 @@ first git clone of the repo then intiate a database (MySql preferred) with name 
 php artisan migrate --seed
 ```
 ```
-npm run serve && npm run dev
+npm install && npm run dev
 ```
