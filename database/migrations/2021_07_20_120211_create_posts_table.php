@@ -22,8 +22,8 @@ class CreatePostsTable extends Migration
             $table->bigInteger('category_id')->unsigned();
             $table->timestamps();
 
-            $table->foreign('user_id')->on('id')->references('users')->onDelete('CASCADE')->onUpdate('CASCADE');
-            $table->foreign('category_id')->on('id')->references('categories')->onDelete('CASCADE')->onUpdate('CASCADE');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('CASCADE')->onUpdate('CASCADE');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('CASCADE')->onUpdate('CASCADE');
         });
     }
 
