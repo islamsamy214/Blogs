@@ -22,5 +22,4 @@ Route::get(
     function () {
         return view('index');
     }
-)
-    ->where('any', '^(?!api\/)[\/\w\.\,-]*');
+)->where('any', '^(?!api\/)[\/\w\.\,-]*');
